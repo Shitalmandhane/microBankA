@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>uHost</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dashBoard.css">
+        <link rel="stylesheet" href="dbDetails.css">
+        <link rel="stylesheet" href="editProfile.css">
+    </head>
+
+    <body>
+        <div class="dashboard">
+            <header class="main-header">
+                <div class="logo-wrapper">
+                    <div class="logoicon">
+                        <img class="micro" src="Img/Micro Bank.png" alt="Microbank" height="25px">
+                        <img class="rect" src="Img/Rectangle 2664.png" alt="vertical line">
+                        <img class="abc" src="Img/ABC Pvt. Ltd..png" alt="abc private">
+                    </div>
+                    <div class="icons">
+                        <button class="btn-primaryheader"><img src="Img/bell.png" id="bell" alt="bell"></button>
+                        <button class="btn-primaryheader" id="pt">PT</button>
+                        <button class="btn-primaryheader"><img src="Img/smallicon.png" id="triangle"
+                                alt="triangle"></button>
+
+
+                    </div>
+                </div>
+            </header>
+            <main>
+
+                <div class="dash-b">
+                    <h1>Edit Profile</h1>
+
+                </div>
+
+
+                <div class="profilePage">
+                    <!-- <button class="btn-primary summary-btnn" type="button">Summary</button>
+                    <button class="btn-primary summary-btn" type="button">Details</button> -->
+                    <div class="cName">
+                        <label for="email"><b>Company Name</b></label>
+                        <input type="text" id="cnameField" placeholder="Enter email/Phone" name="psw" required>
+                        <p class="invalid-cname"></p>
+
+                    </div>
+                    <div class="email">
+                        <label for="email"><b>Email or Phone</b></label>
+                        <input type="text" id="emailField" placeholder="Enter email/Phone" name="psw" required>
+                        <p class="invalid-email"></p>
+                    </div>
+                    <div class="oldPassword">
+                        <label for="psw"><b> Old Password</b></label>
+                        <div class="textIcon">
+                            <input type="password" id="opswField" placeholder="Enter Password" name="psw" required>
+                            <!-- <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;"></i> -->
+                            <i class="fa fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>
+                            <p class="incorrect-Password"></p>
+                        </div>
+                    </div>
+                    <div class="newpPassword">
+                        <label for="psw"><b> New Password</b></label>
+                        <div class="textIcon">
+                            <input type="password" id="npswField" placeholder="Enter Password" name="psw" required>
+                            <!-- <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;"></i> -->
+                            <i class="fa fa-eye-slash" id="togglePassword1" style="cursor: pointer;"></i>
+                            <p class="new-password-error"></p>
+                        </div>
+
+                    </div>
+                    <div class="cPassword">
+                        <label for="psw"><b> Confirm Password</b></label>
+                        <div class="textIcon">
+                            <input type="password" id="cpswField" placeholder="Enter Password" name="psw" required>
+                            <!-- <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;"></i> -->
+                            <i class="fa fa-eye-slash" id="togglePassword2" style="cursor: pointer;"></i>
+                            <p class="c-password-error"></p>
+                        </div>
+                        <div class="buttonWrapper">
+                            <button type="button" id="updateButton" value='Login'>Update</button>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+
+            <p> <i class="fa fa-copyright" aria-hidden="true"></i>2021 Micro Bank</p>
+        </footer>
+    </body>
+    <script src="editProfile.js"></script>
+
+</html>
