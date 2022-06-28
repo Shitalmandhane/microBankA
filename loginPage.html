@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>uHost</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="loginPage.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="split left">
+                <div class="Img">
+                    <img class="backgroundimg" src="Img/loginpageImg.png" alt="loginImage" />
+                </div>
+            </div>
+            <div class="split right">
+                <form class="loginForm">
+                    <div class="headTag">
+                        <h1>Login</h1>
+                        <p id="login">please login to your account</p>
+                    </div>
+                    <div class="email">
+                        <label for="email"><b>Email or Phone</b></label>
+                        <input type="text" id="emailField" placeholder="Enter email/Phone" name="psw" required>
+                        <p class="invalid-email-message"></p>
+                    </div>
+                    <div class="password">
+                        <label for="psw"><b>Password</b></label>
+                        <div class="textIcon">
+                            <input type="password" id="pswField" placeholder="Enter Password" name="psw" required>
+                            <!-- <i class="fa fa-eye" id="togglePassword" style="cursor: pointer;"></i> -->
+                            <i class="fa fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>
+                        </div>
+                        <p class="weakPassword"></p>
+
+                        <p id="forgotP">Forgot Password?</p>
+                    </div>
+                    <div class="buttonWrapper">
+
+                        <button type="button" id="loginButton" value='Login'>Login</button>
+
+                        <div class="pfield">
+                            <p id="noAccount">Dont't have an account?</p>
+                            <a href="createAccount.html">Create an Account</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="loginPage.js"></script>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>uHost</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="createAccount.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="split left">
+            </div>
+            <div class="split right">
+                <form class="loginForm">
+                    <h1 class="h1headTag">Create An Account</h1>
+                    <div class="fullName">
+                        <label for="fullName"><b id="bold">Full Name</b></label>
+                        <input type="text" id="fnameField" placeholder="Enter your Name" name="fullname" required>
+                    </div>
+                    <div class="Date">
+                        <label for="Date"><b id="bold">Date of Incorporation</b></label>
+                        <input type="text" id="dateField" placeholder="Enter Date" name="date" required>
+                    </div>
+                    <div class="email">
+                        <label for="email"><b id="bold">Email</b></label>
+                        <input type="text" id="emailField" placeholder="Enter email/Phone" name="email" required>
+                        <p class="invalid-email-message"></p>
+                    </div>
+                    <div class="password">
+                        <label for="psw"><b id="bold">Password</b></label>
+                        <div class="password1">
+                            <input type="password" id="pswField" placeholder="Enter Password" name="psw" required>
+                            <i class="fa fa-eye-slash" id="togglePassword" style="cursor: pointer;"></i>
+                        </div>
+                        <p class="invalid-password"></p>
+
+                    </div>
+                    <div class="forgetPsd">
+                        <label for="forgetpsw"><b id="bold"> Confirm Password</b></label>
+                        <div class="confirmpassword">
+                            <input type="password" id="confirmPsw" placeholder="Reenter Password" name="forgetpsw"
+                                required>
+                            <i class="fa fa-eye-slash" id="togglePassword1" style="cursor: pointer;"></i>
+                        </div>
+                        <p class="invalid-password"></p>
+                    </div>
+                    <div class="buttonWrapper">
+                        <button id="createButton">Create an Account</button>
+                        </button>
+                        <div class="pfield">
+                            <p id="noAccount">Already have an account?</p>
+                            <a href="loginPage.html">Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="createAccount.js"></script>
+
+</html>
